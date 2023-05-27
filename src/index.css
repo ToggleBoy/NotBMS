@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.dark {
+  background: #121212;
+  color: aliceblue;
+}
+
+.light {
+  color: black;
+  background-color: white;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 0% 5%;
+  background: yellow;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-title {
+  flex: 1 1 20%;
+}
+
+.nav-search {
+  flex: 1 1 80%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 3%;
+}
+
+.searchbar {
+  background-color: rgb(189, 189, 1);
+  border: none;
+  border-radius: 20px;
+  padding: 0.8% 2%;
+  width: 30%;
+  outline: 0;
+}
+
+.sub-nav {
+  padding: 0 5%;
+  display: flex;
+  gap: 5%;
+  background: orchid;
+  align-items: center;
+  height: 40px;
+}
+
+.nav-link1{
+  flex: 1 1 50%;
+  display: flex;
+  gap: 5%;
+}
+
+.nav-link2{
+  flex: 1 1 50%;
+  display: flex;
+  justify-content: end;
+  gap: 5%;
+}
+
+/* Home */
+
+.home, .about, .contact, .theater, .movies, .cinemas {
+  padding: 0 5%;
+}
+
+.movies-list {
+  padding: 2% 0%;
+  display: flex;
+  overflow-x: scroll;
+}
+
+/* movies card */
+.card {
+  padding: 0.2% 0.2% 1%;
+  margin: 0% 2% 0 0;
+  border-radius: 6px;
+}
+
+.card-image {
+  background-color: rgb(236, 236, 236);
+  width: 200px;
+  height: 250px;
+  border-radius: 6px 6px 0 0;
+}
+
+.card-image:hover {
+  transform: scale(0.95);
+}
+
+.category {
+  text-transform: uppercase;
+  color: rgb(63, 121, 230);
+  padding: 10px 7px 0;
+  text-align: center;
+}
+
+.category:hover {
+  cursor: pointer;
+}
+
+/* cinemas card */
+.cinemas-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cinemascard {
+  padding: 2% 5%;
+  margin: 3% 0 5%;
+  display: flex;
+  border-bottom: 1px solid black;
+}
+
+.cinemas-image {
+  flex: 1 1 30%;
+  background: gray;
+  margin: 0% 3%;
+  width: auto;
+  height: 350px;
+}
+
+.cinemas-description {
+  flex: 1 1 50%;
+  font-size: 1.5em;
+  font-weight: 100;
+}
+
+.cinemascard:hover {
+  transform: scale(1.02);
+}
+
+/* about */
+.about, .contact, .movies, .theater {
+  height: 100vh;
+}
+/* contacts */
+
+/* movies */
+.movies {
+  display: flex;
+  padding-top: 8%;
+  gap: 5%;
+}
+
+.movies-image {
+  flex: 1 1 50%;
+  background: grey;
+  height: 400px;
+}
+
+.movies-content {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 400px;
+}
