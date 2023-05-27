@@ -13,7 +13,6 @@ const UpcomingMovies = () => {
         <h1>{movie.movie_name}</h1>
         <h4>{movie.description}</h4>
         <h4>{movie.date_of_release}</h4>
-        <A href="/">Book Ticket</A>
       </div>
     </div>
   );
