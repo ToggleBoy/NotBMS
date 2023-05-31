@@ -1,12 +1,12 @@
 import { CinemasCard } from "../components/Card";
+import { cinemas } from "../data/Data";
 
 const Cinemas = () => {
-  const item = [1, 2, 3, 4, 5, 6, 7, 8, 9];
   return (
     <div class="cinemas">
       <h2>Trending Cinemas</h2>
       <div class="cinemas-list">
-        <For each={item}>{(item) => <CinemasCard id={item} />}</For>
+        <For each={cinemas}>{(item) => <CinemasCard cinema={item} />}</For>
       </div>
     </div>
   );

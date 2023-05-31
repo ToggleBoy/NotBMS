@@ -22,23 +22,17 @@ export const UpcomingMoviesCard = (props) => {
   );
 };
 
-
-
-
 export const CinemasCard = (props) => {
   return (
     <div class="cinemascard">
       <div class="cinemas-image">Image</div>
       <div class="cinemas-description">
-        <h3>Title</h3>
+        <h3>{props.cinema.cinemaName}</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit
-          porro soluta saepe ea veniam atque dolor est minima rerum alias neque,
-          doloremque, laborum explicabo distinctio qui repellat! Aperiam, iure
-          facere?
+          {props.cinema.description}
         </p>
-        <h6>Loaction</h6>
-        <A href={`/theater/${props.id}`}>Book Tickets</A>
+        <h6>{props.cinema.location}</h6>
+        <A href={`/theater/${props.cinema.id}`}>Book Tickets</A>
       </div>
     </div>
   );

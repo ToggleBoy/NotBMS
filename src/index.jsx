@@ -4,7 +4,7 @@ import { render } from "solid-js/web";
 import "./index.css";
 import App from "./App";
 import { Router } from "@solidjs/router";
-import { ThemeProvider } from "./context/ThemeContext";
+import { AppProvider } from "./context/AppContext";
 
 const root = document.getElementById("root");
 
@@ -17,9 +17,9 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
 render(
   () => (
     <Router>
-      <ThemeProvider>
+      <AppProvider>
         <App />
-      </ThemeProvider>
+      </AppProvider>
     </Router>
   ),
 

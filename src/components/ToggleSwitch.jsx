@@ -1,8 +1,8 @@
-import { useThemeContext } from "../context/ThemeContext";
+import { useAppContext } from "../context/AppContext";
 import './ToggleSwitch.css'
 
 export const ToggleSwitch = () => {
-  const { isDarkMode, toggleTheme } = useThemeContext();
+  const { isDarkMode, toggleTheme } = useAppContext();
 
   return (
     <label className="switch">

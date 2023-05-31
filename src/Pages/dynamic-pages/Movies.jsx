@@ -10,10 +10,10 @@ const Movies = () => {
     <div class="movies">
       <div class="movies-image">Image</div>
       <div class="movies-content">
-        <h1>{movie.movie_name}</h1>
-        <h4>{movie.description}</h4>
-        <h4>{movie.date_of_release}</h4>
-        <A href="/">Book Ticket</A>
+        <h3>{movie.movie_name}</h3>
+        <p>{movie.description}</p>
+        <h6>{movie.date_of_release}</h6>
+        <A href={`/movies/theater/${movie.id}`}>select Theater</A>
       </div>
     </div>
   );
